@@ -2,6 +2,14 @@
  "Post": {
    "title": "string",
    "clicks": "int",
-   "body": "string"
+   "body": "string",
+   "author": "User[]",
+ },
+ "User": {
+  "username": "string",
+  "first_name": "string",
+  "last_name": "string",
+  "age": "int",
+  "post": "Post",
  }
 }
