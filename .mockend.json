@@ -3,7 +3,7 @@
    "title": "string",
    "clicks": "int",
    "body": "string",
-   "author": "User[]"
+   "authors": "User[]"
  },
  "User": {
   "username": "string",
