@@ -3,13 +3,13 @@
    "title": "string",
    "clicks": "int",
    "body": "string",
-   "author": "User[]",
+   "author": "User[]"
  },
  "User": {
   "username": "string",
   "first_name": "string",
   "last_name": "string",
   "age": "int",
-  "post": "Post",
+  "post": "Post"
  }
 }
