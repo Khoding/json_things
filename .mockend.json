@@ -4,13 +4,19 @@
       "string": {}
     },
     "clicks": {
-      "int": {"min": 0, "max": 1000000}
+      "int": {
+        "min": 0,
+        "max": 1000000
+      }
     },
     "body": {
       "string": {}
     },
     "authors": {
       "hasMany": "User"
+    },
+    "comments": {
+      "hasMany": "Comment"
     }
   },
   "User": {
@@ -24,10 +30,21 @@
       "string": {}
     },
     "age": {
-      "int": {"min": 0, "max": 1000000}
+      "int": {
+        "min": 0,
+        "max": 1000000
+      }
     },
     "post": {
       "belongsTo": "Post"
     }
-  }
+  },
+  "Comment": {
+    "body": {
+      "string": {}
+    },
+    "post": {
+      "belongsTo": "Post"
+    }
+  },
 }
