@@ -12,8 +12,8 @@
     "body": {
       "string": {}
     },
-    "authors": {
-      "hasMany": "User"
+    "author": {
+      "belongsTo": "User"
     },
     "comments": {
       "hasMany": "Comment"
@@ -35,8 +35,11 @@
         "max": 1000000
       }
     },
-    "post": {
-      "belongsTo": "Post"
+    "posts": {
+      "hasMany": "Post"
+    },
+    "comments": {
+      "hasMany": "Comment"
     }
   },
   "Comment": {
@@ -46,8 +49,8 @@
     "post": {
       "belongsTo": "Post"
     },
-    "authors": {
-      "hasMany": "User"
+    "author": {
+      "belongsTo": "User"
     }
   }
 }
