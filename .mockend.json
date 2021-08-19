@@ -4,7 +4,7 @@
       "string": {}
     },
     "clicks": {
-      "int": {}
+      "int": {"min": 0, "max": 1000000}
     },
     "body": {
       "string": {}
@@ -24,7 +24,7 @@
       "string": {}
     },
     "age": {
-      "int": {}
+      "int": {"min": 0, "max": 1000000}
     },
     "post": {
       "belongsTo": "Post"
