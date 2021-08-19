@@ -1,56 +1,18 @@
 {
-  "Post": {
-    "title": {
-      "string": {}
+    "Post": {
+        "title": {
+            "string": {}
+        },
+        "comments": {
+            "hasMany": "Comment"
+        }
     },
-    "clicks": {
-      "int": {
-        "min": 0,
-        "max": 1000000
-      }
-    },
-    "body": {
-      "string": {}
-    },
-    "author": {
-      "belongsTo": "User"
-    },
-    "comments": {
-      "hasMany": "Comment"
+    "Comment": {
+        "body": {
+            "string": {}
+        },
+        "post": {
+            "belongsTo": "Post"
+        }
     }
-  },
-  "User": {
-    "username": {
-      "string": {}
-    },
-    "first_name": {
-      "string": {}
-    },
-    "last_name": {
-      "string": {}
-    },
-    "age": {
-      "int": {
-        "min": 0,
-        "max": 1000000
-      }
-    },
-    "posts": {
-      "hasMany": "Post"
-    },
-    "comments": {
-      "hasMany": "Comment"
-    }
-  },
-  "Comment": {
-    "body": {
-      "string": {}
-    },
-    "post": {
-      "belongsTo": "Post"
-    },
-    "author": {
-      "belongsTo": "User"
-    }
-  }
 }
