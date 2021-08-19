@@ -46,5 +46,5 @@
     "post": {
       "belongsTo": "Post"
     }
-  },
+  }
 }
