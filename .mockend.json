@@ -45,6 +45,9 @@
     },
     "post": {
       "belongsTo": "Post"
+    },
+    "authors": {
+      "hasMany": "User"
     }
   }
 }
