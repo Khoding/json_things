@@ -1,17 +1,31 @@
 {
   "Post": {
-    "title": "string",
-    "clicks": "int",
-    "body": "string",
+    "title": {
+      "string": {}
+    },
+    "clicks": {
+      "int": {}
+    },
+    "body": {
+      "string": {}
+    },
     "authors": {
       "hasMany": "User"
     }
   },
   "User": {
-    "username": "string",
-    "first_name": "string",
-    "last_name": "string",
-    "age": "int",
+    "username": {
+      "string": {}
+    },
+    "first_name": {
+      "string": {}
+    },
+    "last_name": {
+      "string": {}
+    },
+    "age": {
+      "int": {}
+    },
     "post": {
       "belongsTo": "Post"
     }
